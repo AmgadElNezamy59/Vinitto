@@ -15,35 +15,10 @@
                     <view key="view" contentMode="scaleToFill" id="qsW-Vs-9fp">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="VGq-OB-Vwc">
-                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="homeCell" id="Knb-HK-Ssh" customClass="HomeTableViewCell" customModule="Vinitto" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Knb-HK-Ssh" id="qRE-t4-sPj">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="UNZ-of-pnY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="VGq-OB-Vwc" firstAttribute="top" secondItem="UNZ-of-pnY" secondAttribute="top" id="4RY-N4-J17"/>
-                            <constraint firstItem="VGq-OB-Vwc" firstAttribute="leading" secondItem="UNZ-of-pnY" secondAttribute="leading" id="7Co-qg-8ZC"/>
-                            <constraint firstItem="UNZ-of-pnY" firstAttribute="trailing" secondItem="VGq-OB-Vwc" secondAttribute="trailing" id="Hgb-5I-jWa"/>
-                            <constraint firstItem="UNZ-of-pnY" firstAttribute="bottom" secondItem="VGq-OB-Vwc" secondAttribute="bottom" id="wqR-dZ-bTO"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="8vK-18-mp9"/>
-                    <connections>
-                        <outlet property="tableView" destination="VGq-OB-Vwc" id="ZS2-QP-A9p"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="17K-0O-RWC" sceneMemberID="firstResponder"/>
             </objects>
