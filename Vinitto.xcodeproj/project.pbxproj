@@ -24,13 +24,13 @@
 		185808952A613218001C7FFB /* Constatnt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185808942A613218001C7FFB /* Constatnt.swift */; };
 		1858089E2A6133C3001C7FFB /* FavouriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1858089C2A6133C3001C7FFB /* FavouriteTableViewCell.swift */; };
 		185808A22A6133D8001C7FFB /* CartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185808A02A6133D8001C7FFB /* CartTableViewCell.swift */; };
-		185808A62A6133FC001C7FFB /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185808A42A6133FC001C7FFB /* HomeTableViewCell.swift */; };
 		185808AE2A6135A5001C7FFB /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185808AD2A6135A5001C7FFB /* CategoryModel.swift */; };
 		185808B02A613654001C7FFB /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185808AF2A613654001C7FFB /* Global.swift */; };
 		185808B52A613892001C7FFB /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185808B32A613892001C7FFB /* ProductTableViewCell.swift */; };
 		185808B92A6138B9001C7FFB /* ProductViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185808B82A6138B9001C7FFB /* ProductViewController.storyboard */; };
 		185808BB2A6138DB001C7FFB /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185808BA2A6138DB001C7FFB /* ProductViewController.swift */; };
 		18A40CFE2A7162CE00F0D8B8 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A40CFD2A7162CE00F0D8B8 /* Theme.swift */; };
+		18AFE7BD2A76C23A005DBF7E /* SliderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AFE7BC2A76C23A005DBF7E /* SliderCollectionViewCell.swift */; };
 		18CD1ED52A71618000454095 /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CD1ED42A71618000454095 /* ProductModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,13 +54,13 @@
 		185808942A613218001C7FFB /* Constatnt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constatnt.swift; sourceTree = "<group>"; };
 		1858089C2A6133C3001C7FFB /* FavouriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteTableViewCell.swift; sourceTree = "<group>"; };
 		185808A02A6133D8001C7FFB /* CartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewCell.swift; sourceTree = "<group>"; };
-		185808A42A6133FC001C7FFB /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		185808AD2A6135A5001C7FFB /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
 		185808AF2A613654001C7FFB /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		185808B32A613892001C7FFB /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
 		185808B82A6138B9001C7FFB /* ProductViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProductViewController.storyboard; sourceTree = "<group>"; };
 		185808BA2A6138DB001C7FFB /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 		18A40CFD2A7162CE00F0D8B8 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		18AFE7BC2A76C23A005DBF7E /* SliderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderCollectionViewCell.swift; sourceTree = "<group>"; };
 		18CD1ED42A71618000454095 /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -141,8 +141,8 @@
 		185808812A612E67001C7FFB /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				185808AD2A6135A5001C7FFB /* CategoryModel.swift */,
-				18CD1ED42A71618000454095 /* ProductModel.swift */,
+				18AFE7C32A76C426005DBF7E /* CategoryData */,
+				18AFE7C42A76C434005DBF7E /* ProductData */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -151,8 +151,8 @@
 			isa = PBXGroup;
 			children = (
 				1858086C2A612D3D001C7FFB /* HomeViewController.swift */,
-				185808A42A6133FC001C7FFB /* HomeTableViewCell.swift */,
 				185808882A6130B3001C7FFB /* HomeViewController.storyboard */,
+				18AFE7BC2A76C23A005DBF7E /* SliderCollectionViewCell.swift */,
 			);
 			path = HomeViewController;
 			sourceTree = "<group>";
@@ -194,6 +194,22 @@
 				185808B82A6138B9001C7FFB /* ProductViewController.storyboard */,
 			);
 			path = ProductViewController;
+			sourceTree = "<group>";
+		};
+		18AFE7C32A76C426005DBF7E /* CategoryData */ = {
+			isa = PBXGroup;
+			children = (
+				185808AD2A6135A5001C7FFB /* CategoryModel.swift */,
+			);
+			path = CategoryData;
+			sourceTree = "<group>";
+		};
+		18AFE7C42A76C434005DBF7E /* ProductData */ = {
+			isa = PBXGroup;
+			children = (
+				18CD1ED42A71618000454095 /* ProductModel.swift */,
+			);
+			path = ProductData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,8 +294,8 @@
 				185808BB2A6138DB001C7FFB /* ProductViewController.swift in Sources */,
 				185808692A612D3D001C7FFB /* AppDelegate.swift in Sources */,
 				1858089E2A6133C3001C7FFB /* FavouriteTableViewCell.swift in Sources */,
+				18AFE7BD2A76C23A005DBF7E /* SliderCollectionViewCell.swift in Sources */,
 				185808B02A613654001C7FFB /* Global.swift in Sources */,
-				185808A62A6133FC001C7FFB /* HomeTableViewCell.swift in Sources */,
 				185808A22A6133D8001C7FFB /* CartTableViewCell.swift in Sources */,
 				185808AE2A6135A5001C7FFB /* CategoryModel.swift in Sources */,
 				185808B52A613892001C7FFB /* ProductTableViewCell.swift in Sources */,

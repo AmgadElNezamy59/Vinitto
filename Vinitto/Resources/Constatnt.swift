@@ -12,7 +12,10 @@ struct K{
     static var favCell = "favCell"
     static var cartCell = "cartCell"
     static var productCell = "productCell"
+    static var SliderCell = "SliderCell"
+    static var CategoryTableCell = "CategoryTableCell"
 
+    
     
 }
 
