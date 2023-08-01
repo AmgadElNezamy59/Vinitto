@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		181ED8842A76DEE700C6442E /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181ED8832A76DEE700C6442E /* Category.swift */; };
-		181ED8862A76DF6200C6442E /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181ED8852A76DF6200C6442E /* Functions.swift */; };
+		181ED8842A76DEE700C6442E /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181ED8832A76DEE700C6442E /* ProductModel.swift */; };
 		185808692A612D3D001C7FFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185808682A612D3D001C7FFB /* AppDelegate.swift */; };
 		1858086B2A612D3D001C7FFB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1858086A2A612D3D001C7FFB /* SceneDelegate.swift */; };
 		1858086D2A612D3D001C7FFB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1858086C2A612D3D001C7FFB /* HomeViewController.swift */; };
@@ -30,15 +29,15 @@
 		185808B52A613892001C7FFB /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185808B32A613892001C7FFB /* ProductTableViewCell.swift */; };
 		185808B92A6138B9001C7FFB /* ProductViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185808B82A6138B9001C7FFB /* ProductViewController.storyboard */; };
 		185808BB2A6138DB001C7FFB /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185808BA2A6138DB001C7FFB /* ProductViewController.swift */; };
-		189AD91E2A76DDAC00245F0D /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189AD91D2A76DDAC00245F0D /* Data.swift */; };
 		18A40CFE2A7162CE00F0D8B8 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A40CFD2A7162CE00F0D8B8 /* Theme.swift */; };
 		18AFE7BD2A76C23A005DBF7E /* SliderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AFE7BC2A76C23A005DBF7E /* SliderCollectionViewCell.swift */; };
-		18CD1ED52A71618000454095 /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CD1ED42A71618000454095 /* ProductModel.swift */; };
+		18BB76072A798442003AE60C /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BB76062A798442003AE60C /* CategoryTableViewCell.swift */; };
+		18BB76092A7986AF003AE60C /* ProductSliderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BB76082A7986AF003AE60C /* ProductSliderCollectionViewCell.swift */; };
+		18CD1ED52A71618000454095 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CD1ED42A71618000454095 /* ItemModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		181ED8832A76DEE700C6442E /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
-		181ED8852A76DF6200C6442E /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
+		181ED8832A76DEE700C6442E /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
 		185808652A612D3D001C7FFB /* Vinitto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vinitto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		185808682A612D3D001C7FFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1858086A2A612D3D001C7FFB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,10 +61,11 @@
 		185808B32A613892001C7FFB /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
 		185808B82A6138B9001C7FFB /* ProductViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProductViewController.storyboard; sourceTree = "<group>"; };
 		185808BA2A6138DB001C7FFB /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
-		189AD91D2A76DDAC00245F0D /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		18A40CFD2A7162CE00F0D8B8 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		18AFE7BC2A76C23A005DBF7E /* SliderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderCollectionViewCell.swift; sourceTree = "<group>"; };
-		18CD1ED42A71618000454095 /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
+		18BB76062A798442003AE60C /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
+		18BB76082A7986AF003AE60C /* ProductSliderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductSliderCollectionViewCell.swift; sourceTree = "<group>"; };
+		18CD1ED42A71618000454095 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,10 +145,8 @@
 		185808812A612E67001C7FFB /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				189AD91D2A76DDAC00245F0D /* Data.swift */,
-				181ED8832A76DEE700C6442E /* Category.swift */,
-				18CD1ED42A71618000454095 /* ProductModel.swift */,
-				181ED8852A76DF6200C6442E /* Functions.swift */,
+				181ED8832A76DEE700C6442E /* ProductModel.swift */,
+				18CD1ED42A71618000454095 /* ItemModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -159,6 +157,8 @@
 				1858086C2A612D3D001C7FFB /* HomeViewController.swift */,
 				185808882A6130B3001C7FFB /* HomeViewController.storyboard */,
 				18AFE7BC2A76C23A005DBF7E /* SliderCollectionViewCell.swift */,
+				18BB76062A798442003AE60C /* CategoryTableViewCell.swift */,
+				18BB76082A7986AF003AE60C /* ProductSliderCollectionViewCell.swift */,
 			);
 			path = HomeViewController;
 			sourceTree = "<group>";
@@ -280,22 +280,22 @@
 			files = (
 				185808952A613218001C7FFB /* Constatnt.swift in Sources */,
 				1858086D2A612D3D001C7FFB /* HomeViewController.swift in Sources */,
-				181ED8842A76DEE700C6442E /* Category.swift in Sources */,
+				181ED8842A76DEE700C6442E /* ProductModel.swift in Sources */,
 				185808732A612D3D001C7FFB /* Vinitto.xcdatamodeld in Sources */,
 				185808BB2A6138DB001C7FFB /* ProductViewController.swift in Sources */,
 				185808692A612D3D001C7FFB /* AppDelegate.swift in Sources */,
 				1858089E2A6133C3001C7FFB /* FavouriteTableViewCell.swift in Sources */,
 				18AFE7BD2A76C23A005DBF7E /* SliderCollectionViewCell.swift in Sources */,
-				189AD91E2A76DDAC00245F0D /* Data.swift in Sources */,
 				185808B02A613654001C7FFB /* Global.swift in Sources */,
 				185808A22A6133D8001C7FFB /* CartTableViewCell.swift in Sources */,
-				181ED8862A76DF6200C6442E /* Functions.swift in Sources */,
 				185808B52A613892001C7FFB /* ProductTableViewCell.swift in Sources */,
 				185808832A61302B001C7FFB /* FavouriteViewController.swift in Sources */,
 				185808872A61304E001C7FFB /* ProfileViewController.swift in Sources */,
+				18BB76072A798442003AE60C /* CategoryTableViewCell.swift in Sources */,
 				185808852A613039001C7FFB /* CartViewController.swift in Sources */,
 				1858086B2A612D3D001C7FFB /* SceneDelegate.swift in Sources */,
-				18CD1ED52A71618000454095 /* ProductModel.swift in Sources */,
+				18CD1ED52A71618000454095 /* ItemModel.swift in Sources */,
+				18BB76092A7986AF003AE60C /* ProductSliderCollectionViewCell.swift in Sources */,
 				18A40CFE2A7162CE00F0D8B8 /* Theme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

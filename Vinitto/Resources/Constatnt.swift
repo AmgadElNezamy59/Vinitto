@@ -14,6 +14,7 @@ struct K{
     static var productCell = "productCell"
     static var SliderCell = "SliderCell"
     static var CategoryTableCell = "CategoryTableCell"
+    static var productSlider = "productSlider"
 
     
     
