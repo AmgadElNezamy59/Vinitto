@@ -15,6 +15,7 @@ class CartTableViewCell: UITableViewCell {
     @IBOutlet weak var modelLbl: UILabel!
     
     @IBOutlet weak var priceLbl: UILabel!
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -24,10 +25,15 @@ class CartTableViewCell: UITableViewCell {
     func setUp(img:UIImage,model:String,price:String,size:String,amount:String){
         self.img.image = img
         self.modelLbl.text = model
-        self.priceLbl.text = price
-        self.amountLbl.text = amount
-        self.sizeLbl.text = size
+        self.priceLbl.text = price + " EGP"
+        self.amountLbl.text = "Amount: " + amount
+        self.sizeLbl.text = "Size: " + size
+//        self.totalPriceLbl.text = total
+        
     }
+    
+    
+//    totalPriceLbl.text =
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)

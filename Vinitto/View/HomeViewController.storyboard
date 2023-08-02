@@ -218,13 +218,13 @@
                                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="czg-Ii-wb7">
                                                                     <rect key="frame" x="0.0" y="124.66666666666667" width="178" height="35.666666666666671"/>
                                                                     <subviews>
-                                                                        <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="12" translatesAutoresizingMaskIntoConstraints="NO" id="dD6-iy-uPS">
+                                                                        <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" maximumValue="12" translatesAutoresizingMaskIntoConstraints="NO" id="dD6-iy-uPS">
                                                                             <rect key="frame" x="0.0" y="0.0" width="81" height="35.666666666666664"/>
                                                                             <connections>
                                                                                 <action selector="amountStepper:" destination="0zP-fc-exw" eventType="valueChanged" id="Eon-DM-g84"/>
                                                                             </connections>
                                                                         </stepper>
-                                                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tTv-wv-GiS">
+                                                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tTv-wv-GiS">
                                                                             <rect key="frame" x="97" y="0.0" width="81" height="35.666666666666664"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits"/>

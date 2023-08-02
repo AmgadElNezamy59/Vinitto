@@ -44,6 +44,11 @@ extension CartViewController : UITableViewDataSource,UITableViewDelegate{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: K.cartCell, for: indexPath) as! CartTableViewCell
         
+       
+        
+
+        
+        
         cell.setUp(img: cartItems[indexPath.row].photo, model: cartItems[indexPath.row].model, price: cartItems[indexPath.row].price, size: cartItems[indexPath.row].size!, amount: cartItems[indexPath.row].amount!)
         cell.selectionStyle = .none
         return cell

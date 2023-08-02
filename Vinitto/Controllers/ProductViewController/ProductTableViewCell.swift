@@ -52,7 +52,7 @@ class ProductTableViewCell: UITableViewCell {
         
         
         
-        delegat?.addToCart(img: productImage.image!, model: modelLbl.text!, price: priceLbl.text!, amont: amountTxtField.text!, size: "1")
+        delegat?.addToCart(img: productImage.image!, model: modelLbl.text!, price: priceLbl.text!, amont: amountTxtField.text!, size: sizeSegment.titleForSegment(at: sizeSegment.selectedSegmentIndex)!)
         
     
         

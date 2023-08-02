@@ -40,7 +40,7 @@ class FavouriteTableViewCell: UITableViewCell {
     @IBAction func addToCartBtn(_ sender: UIButton) {
         
         
-        delegate?.addToCart(img: ProductImg.image!, model: Model.text!, price: Price.text!, amont: amountTxtField.text!, size: "1")
+        delegate?.addToCart(img: ProductImg.image!, model: Model.text!, price: Price.text!, amont: amountTxtField.text!, size: sizeSegment.titleForSegment(at: sizeSegment.selectedSegmentIndex)!)
         
         
     }
