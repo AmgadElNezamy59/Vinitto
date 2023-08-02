@@ -10,7 +10,6 @@ import UIKit
 
 var SliderImages = [UIImage(named: "Slider0")!,UIImage(named: "Slider1")!,UIImage(named: "Slider2")!,UIImage(named: "Slider3")!,UIImage(named: "Slider4")!]
 
-var VinittoProducts = [Product]()
 
 
 // Favourite Item Data

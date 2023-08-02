@@ -52,6 +52,16 @@ extension FavouriteViewController : UITableViewDataSource,UITableViewDelegate{
         let deleteAction = UIContextualAction(style: .destructive, title: "") { action, view, actionPerformed in
             actionPerformed(true)
             
+            favItems.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+            
+            numOfFavItems -= 1
+            if let tabItems = self.tabBarController?.tabBar.items {
+                // In this case we want to modify the badge number of the third tab:
+                let tabItem = tabItems[1]
+                tabItem.badgeValue = String(numOfFavItems)
+            }
+
             tableView.reloadData()
             
         }

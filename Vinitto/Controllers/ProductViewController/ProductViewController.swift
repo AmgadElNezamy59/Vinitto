@@ -88,8 +88,12 @@ extension ProductViewController: UITableViewDataSource , UITableViewDelegate{
             
             favItems.append(self.VinittoProducts[self.categoryIndex].product[indexPath.row])
             numOfFavItems += 1
-            print(favItems.count)
-            print(numOfFavItems)
+          
+            if let tabItems = self.tabBarController?.tabBar.items {
+                // In this case we want to modify the badge number of the third tab:
+                let tabItem = tabItems[1]
+                tabItem.badgeValue = String(numOfFavItems)
+            }
 
 
 
