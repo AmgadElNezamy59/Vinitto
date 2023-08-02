@@ -72,12 +72,37 @@ extension ProductViewController: UITableViewDataSource , UITableViewDelegate{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: K.productCell,for: indexPath) as! ProductTableViewCell
         cell.setUp(img: VinittoProducts[categoryIndex].product[indexPath.row].photo, model: VinittoProducts[categoryIndex].product[indexPath.row].model, price: VinittoProducts[categoryIndex].product[indexPath.row].price)
+        cell.selectionStyle = .none
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return self.view.frame.size.height * 0.22
     }
+    
+    
+   
+    
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let favAction = UIContextualAction(style: .normal, title: "") { action, view, actionPerformed in
+            print("add to fav")
+            actionPerformed(true)
+            
+        }
+        
+        favAction.image = UIImage(systemName: "heart.fill")
+        favAction.backgroundColor = UIColor.systemPink
+        
+       
+    
+        
+        return  UISwipeActionsConfiguration(actions: [favAction])
+        
+    }
+    
+    
+    
+  
     
     
 }

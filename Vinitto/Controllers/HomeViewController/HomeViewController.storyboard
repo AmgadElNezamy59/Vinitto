@@ -201,7 +201,7 @@
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v8m-8q-4MC">
                                                                     <rect key="frame" x="0.0" y="41.666666666666671" width="178" height="35.666666666666671"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                    <nil key="textColor"/>
+                                                                    <color key="textColor" red="0.75686275960000005" green="0.15686275059999999" blue="0.1215686351" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="YG3-Ba-fTm">
@@ -251,6 +251,7 @@
                                                 <constraint firstItem="yCs-Ui-9rW" firstAttribute="top" secondItem="qfq-h4-gBL" secondAttribute="top" constant="15" id="wgy-C5-fDe"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="tintColor" systemColor="systemGreenColor"/>
                                         <connections>
                                             <outlet property="amountTxtField" destination="tTv-wv-GiS" id="Ori-sj-ekO"/>
                                             <outlet property="modelLbl" destination="EOR-XC-iDy" id="KSe-E7-htL"/>
@@ -279,21 +280,6 @@
             </objects>
             <point key="canvasLocation" x="-669.46564885496184" y="1486.6197183098593"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="Xra-99-4hb">
-            <objects>
-                <viewController id="OUP-Pr-uZ7" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="zYn-HF-Lb0">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="roC-mh-03R"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="I9r-Uc-TYf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="97" y="1494"/>
-        </scene>
     </scenes>
     <resources>
         <image name="Slider0" width="1798" height="838"/>
@@ -301,6 +287,9 @@
         <image name="kid1" width="1100" height="1100"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

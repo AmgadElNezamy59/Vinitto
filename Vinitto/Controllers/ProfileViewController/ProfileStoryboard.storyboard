@@ -34,6 +34,9 @@
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="SIGN IN"/>
+                                                <connections>
+                                                    <segue destination="7xU-qO-tw6" kind="presentation" modalPresentationStyle="fullScreen" id="9TO-4p-OXI"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i1e-VH-OEr">
                                                 <rect key="frame" x="0.0" y="108.6666666666667" width="248" height="54.666666666666671"/>
@@ -84,6 +87,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sVE-wW-JWZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1368.7022900763359" y="745.77464788732402"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="YgA-RT-tW6">
+            <objects>
+                <viewController id="7xU-qO-tw6" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7c9-Hz-fHJ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="UYK-4V-2Bk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="FNS-kT-uxn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zKM-uc-pBQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2225" y="476"/>
         </scene>
     </scenes>
     <resources>
