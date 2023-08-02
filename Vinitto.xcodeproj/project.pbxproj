@@ -127,6 +127,10 @@
 			isa = PBXGroup;
 			children = (
 				1858086E2A612D3D001C7FFB /* Main.storyboard */,
+				1858088E2A6130EF001C7FFB /* ProfileStoryboard.storyboard */,
+				185808882A6130B3001C7FFB /* HomeViewController.storyboard */,
+				1858088A2A6130BF001C7FFB /* FavouriteViewController.storyboard */,
+				1858088C2A6130CB001C7FFB /* CartViewController.storyboard */,
 				185808762A612D3E001C7FFB /* LaunchScreen.storyboard */,
 			);
 			path = View;
@@ -159,7 +163,6 @@
 			isa = PBXGroup;
 			children = (
 				1858086C2A612D3D001C7FFB /* HomeViewController.swift */,
-				185808882A6130B3001C7FFB /* HomeViewController.storyboard */,
 				18AFE7BC2A76C23A005DBF7E /* SliderCollectionViewCell.swift */,
 				18BB76062A798442003AE60C /* CategoryTableViewCell.swift */,
 				18BB76082A7986AF003AE60C /* ProductSliderCollectionViewCell.swift */,
@@ -172,7 +175,6 @@
 			children = (
 				185808822A61302B001C7FFB /* FavouriteViewController.swift */,
 				1858089C2A6133C3001C7FFB /* FavouriteTableViewCell.swift */,
-				1858088A2A6130BF001C7FFB /* FavouriteViewController.storyboard */,
 			);
 			path = FavouriteViewController;
 			sourceTree = "<group>";
@@ -182,7 +184,6 @@
 			children = (
 				185808842A613039001C7FFB /* CartViewController.swift */,
 				185808A02A6133D8001C7FFB /* CartTableViewCell.swift */,
-				1858088C2A6130CB001C7FFB /* CartViewController.storyboard */,
 			);
 			path = CartViewController;
 			sourceTree = "<group>";
@@ -191,7 +192,6 @@
 			isa = PBXGroup;
 			children = (
 				185808862A61304E001C7FFB /* ProfileViewController.swift */,
-				1858088E2A6130EF001C7FFB /* ProfileStoryboard.storyboard */,
 			);
 			path = ProfileViewController;
 			sourceTree = "<group>";
