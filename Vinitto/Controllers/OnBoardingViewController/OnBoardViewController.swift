@@ -23,6 +23,10 @@ class OnBoardViewController: UIViewController {
 
    
     @IBAction func startBtnPressed(_ sender: UIButton) {
+        
+        let homeVC = self.storyboard?.instantiateViewController(identifier: "HomeViewController") as! HomeViewController
+        
+        present(homeVC, animated: true)
     }
     
 }

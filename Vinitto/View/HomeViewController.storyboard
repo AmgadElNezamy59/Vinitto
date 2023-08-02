@@ -12,7 +12,7 @@
         <!--VINITTO-->
         <scene sceneID="FwA-We-Qvn">
             <objects>
-                <viewController id="fyz-ff-UKp" customClass="HomeViewController" customModule="Vinitto" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" id="fyz-ff-UKp" customClass="HomeViewController" customModule="Vinitto" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qsW-Vs-9fp">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

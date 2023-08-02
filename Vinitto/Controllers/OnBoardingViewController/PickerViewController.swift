@@ -47,16 +47,16 @@ class PickerViewController: UIPageViewController,UIPageViewControllerDelegate,UI
         vc1.imag = onboard[0].image
         
         let vc2 = self.storyboard?.instantiateViewController(identifier: "page1") as! OnBoardViewController
-        vc1.desc = onboard[1].description
-        vc1.imag = onboard[1].image
+        vc2.desc = onboard[1].description
+        vc2.imag = onboard[1].image
         
         let vc3 = self.storyboard?.instantiateViewController(identifier: "page1") as! OnBoardViewController
-        vc1.desc = onboard[2].description
-        vc1.imag = onboard[2].image
+        vc3.desc = onboard[2].description
+        vc3.imag = onboard[2].image
         
         let vc4 = self.storyboard?.instantiateViewController(identifier: "page1") as! OnBoardViewController
-        vc1.desc = onboard[3].description
-        vc1.imag = onboard[3].image
+        vc4.desc = onboard[3].description
+        vc4.imag = onboard[3].image
         
         
         arrContainers.append(vc1)

@@ -34,9 +34,9 @@
 		18BB76072A798442003AE60C /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BB76062A798442003AE60C /* CategoryTableViewCell.swift */; };
 		18BB76092A7986AF003AE60C /* ProductSliderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BB76082A7986AF003AE60C /* ProductSliderCollectionViewCell.swift */; };
 		18C2C9D12A7AEAC5005E700C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C2C9D02A7AEAC5005E700C /* SignUpViewController.swift */; };
-		18C2C9D32A7AFE3B005E700C /* Onboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C2C9D22A7AFE3B005E700C /* Onboard.storyboard */; };
 		18C2C9D62A7AFFE9005E700C /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C2C9D52A7AFFE9005E700C /* PickerViewController.swift */; };
 		18C2C9D82A7B04C9005E700C /* OnBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C2C9D72A7B04C9005E700C /* OnBoardViewController.swift */; };
+		18C2C9DA2A7B0C5B005E700C /* HomeTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C2C9D92A7B0C5B005E700C /* HomeTabBar.storyboard */; };
 		18CD1ED52A71618000454095 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CD1ED42A71618000454095 /* ItemModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -70,9 +70,9 @@
 		18BB76062A798442003AE60C /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
 		18BB76082A7986AF003AE60C /* ProductSliderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductSliderCollectionViewCell.swift; sourceTree = "<group>"; };
 		18C2C9D02A7AEAC5005E700C /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		18C2C9D22A7AFE3B005E700C /* Onboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboard.storyboard; sourceTree = "<group>"; };
 		18C2C9D52A7AFFE9005E700C /* PickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
 		18C2C9D72A7B04C9005E700C /* OnBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardViewController.swift; sourceTree = "<group>"; };
+		18C2C9D92A7B0C5B005E700C /* HomeTabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeTabBar.storyboard; sourceTree = "<group>"; };
 		18CD1ED42A71618000454095 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -132,12 +132,12 @@
 			isa = PBXGroup;
 			children = (
 				1858086E2A612D3D001C7FFB /* Main.storyboard */,
+				18C2C9D92A7B0C5B005E700C /* HomeTabBar.storyboard */,
 				1858088E2A6130EF001C7FFB /* ProfileStoryboard.storyboard */,
 				185808882A6130B3001C7FFB /* HomeViewController.storyboard */,
 				1858088A2A6130BF001C7FFB /* FavouriteViewController.storyboard */,
 				1858088C2A6130CB001C7FFB /* CartViewController.storyboard */,
 				185808762A612D3E001C7FFB /* LaunchScreen.storyboard */,
-				18C2C9D22A7AFE3B005E700C /* Onboard.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -300,8 +300,8 @@
 				185808752A612D3E001C7FFB /* Assets.xcassets in Resources */,
 				1858088F2A6130EF001C7FFB /* ProfileStoryboard.storyboard in Resources */,
 				1858088B2A6130BF001C7FFB /* FavouriteViewController.storyboard in Resources */,
+				18C2C9DA2A7B0C5B005E700C /* HomeTabBar.storyboard in Resources */,
 				1858088D2A6130CB001C7FFB /* CartViewController.storyboard in Resources */,
-				18C2C9D32A7AFE3B005E700C /* Onboard.storyboard in Resources */,
 				185808892A6130B3001C7FFB /* HomeViewController.storyboard in Resources */,
 				185808702A612D3D001C7FFB /* Main.storyboard in Resources */,
 			);
