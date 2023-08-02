@@ -83,6 +83,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="descLbl" destination="xm0-Sg-es1" id="8GH-iZ-7v8"/>
                         <outlet property="img" destination="PUS-KD-nbn" id="AbA-cG-S8k"/>
                     </connections>
                 </viewController>

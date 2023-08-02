@@ -10,11 +10,14 @@ import UIKit
 class OnBoardViewController: UIViewController {
     @IBOutlet weak var descLbl: UILabel!
     @IBOutlet weak var img: UIImageView!
-    
+    var desc : String?
+    var imag : UIImage?
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        descLbl.text = desc
+        img.image = imag
 
-        // Do any additional setup after loading the view.
     }
     
 
