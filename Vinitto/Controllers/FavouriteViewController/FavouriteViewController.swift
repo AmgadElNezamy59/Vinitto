@@ -17,15 +17,27 @@ class FavouriteViewController: UIViewController {
 
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        if favItems.count == 0 {
+            tableViiew.isHidden = true
+        }else{
+            tableViiew.isHidden = false
+
+            tableViiew.reloadData()
+        }
+    }
+    
 }
 
 extension FavouriteViewController : UITableViewDataSource,UITableViewDelegate{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return favItems.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: K.favCell, for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: K.favCell, for: indexPath) as! FavouriteTableViewCell
+        
+        cell.setUp(img: favItems[indexPath.row].photo, model: favItems[indexPath.row].model, price: favItems[indexPath.row].price + " EGP")
         cell.selectionStyle = .none
         return cell
     }
@@ -33,6 +45,19 @@ extension FavouriteViewController : UITableViewDataSource,UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return self.view.frame.size.height * 0.22
+    }
+    
+    
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let deleteAction = UIContextualAction(style: .destructive, title: "") { action, view, actionPerformed in
+            actionPerformed(true)
+            
+            tableView.reloadData()
+            
+        }
+        deleteAction.image = UIImage(systemName: "trash.fill")
+
+        return UISwipeActionsConfiguration(actions: [deleteAction])
     }
 
 

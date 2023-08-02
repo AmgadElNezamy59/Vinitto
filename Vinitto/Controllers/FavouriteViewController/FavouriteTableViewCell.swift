@@ -8,16 +8,29 @@
 import UIKit
 
 class FavouriteTableViewCell: UITableViewCell {
-
+    @IBOutlet weak var amountTxtField: UITextField!
+    @IBOutlet weak var Price: UILabel!
+    @IBOutlet weak var sizeSegment: UISegmentedControl!
+    @IBOutlet weak var Model: UILabel!
+    @IBOutlet weak var ProductImg: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
     
+    func setUp(img:UIImage,model:String,price:String){
+        self.ProductImg.image = img
+        self.Model.text = model
+        self.Price.text = price
+        
+    }
+  
+    
+    @IBAction func amountStepper(_ sender: UIStepper) {
+        amountTxtField.text = String(Int(sender.value))
+        
+    }
+    @IBAction func addToCartBtn(_ sender: UIButton) {
+    }
 }

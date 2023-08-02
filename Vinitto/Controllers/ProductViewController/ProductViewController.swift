@@ -71,7 +71,7 @@ extension ProductViewController: UITableViewDataSource , UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: K.productCell,for: indexPath) as! ProductTableViewCell
-        cell.setUp(img: VinittoProducts[categoryIndex].product[indexPath.row].photo, model: VinittoProducts[categoryIndex].product[indexPath.row].model, price: VinittoProducts[categoryIndex].product[indexPath.row].price)
+        cell.setUp(img: VinittoProducts[categoryIndex].product[indexPath.row].photo, model: VinittoProducts[categoryIndex].product[indexPath.row].model, price: VinittoProducts[categoryIndex].product[indexPath.row].price + " EGP")
         cell.selectionStyle = .none
         return cell
     }
@@ -85,13 +85,20 @@ extension ProductViewController: UITableViewDataSource , UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         let favAction = UIContextualAction(style: .normal, title: "") { action, view, actionPerformed in
-            print("add to fav")
+            
+            favItems.append(self.VinittoProducts[self.categoryIndex].product[indexPath.row])
+            numOfFavItems += 1
+            print(favItems.count)
+            print(numOfFavItems)
+
+
+
             actionPerformed(true)
             
         }
         
         favAction.image = UIImage(systemName: "heart.fill")
-        favAction.backgroundColor = UIColor.systemPink
+        favAction.backgroundColor = UIColor.purple
         
        
     
