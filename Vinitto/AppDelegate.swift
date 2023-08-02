@@ -14,7 +14,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        print(#function)
+        let titleFont = UIFont.systemFont(ofSize: 25)
+        let titleColor = UIColor.red
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.font: titleFont, NSAttributedString.Key.foregroundColor: titleColor]
+        
+        
 
         return true
         

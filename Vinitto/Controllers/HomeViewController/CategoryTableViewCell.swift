@@ -9,6 +9,8 @@ import UIKit
 
 class CategoryTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var categoryLbl: UILabel!
+    var arrPhots = [UIImage]()
     @IBOutlet weak var collectionView: UICollectionView!
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -24,12 +26,12 @@ class CategoryTableViewCell: UITableViewCell {
 
 extension CategoryTableViewCell:UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return arrPhots.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: K.productSlider, for: indexPath) as! ProductSliderCollectionViewCell
-        cell.image.image = UIImage(named: "men1")
+        cell.image.image = arrPhots[indexPath.row]
         return cell
     }
     

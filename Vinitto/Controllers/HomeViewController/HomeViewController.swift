@@ -12,7 +12,8 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var tableView: UITableView!
     
-    var VinittoProducts = [Product]()
+    var CategorySlider = [CategoryItems]()
+    var index = 0
 
     
     var timer : Timer?
@@ -30,46 +31,11 @@ class HomeViewController: UIViewController {
         startTimer()
         
         
+        CategorySlider.append(CategoryItems(categrrName: "Men Shoses", photos: [UIImage(named: "men1")!,UIImage(named: "men8")!,UIImage(named: "men2")!,UIImage(named: "men3")!,UIImage(named: "men4")!,UIImage(named: "men5")!,UIImage(named: "men6")!,UIImage(named: "men7")!]))
         
-        VinittoProducts.append(Product(category: "MEN SHOSES", product: [
-            Item(photo: UIImage(named: "men1")!, model: "2022840108", price: "250", amount: "1", size: ""),
-            Item(photo: UIImage(named: "men2")!, model: "2022840106", price: "250", amount: "1", size: ""),
-            Item(photo: UIImage(named: "men3")!, model: "2041630401", price: "125", amount: "1", size: ""),
-            Item(photo: UIImage(named: "men4")!, model: "2023330100", price: "250", amount: "1", size: ""),
-            Item(photo: UIImage(named: "men5")!, model: "2052850106", price: "420", amount: "1", size: ""),
-            Item(photo: UIImage(named: "men6")!, model: "2043210104", price: "195", amount: "1", size: ""),
-            Item(photo: UIImage(named: "men7")!, model: "2122810100", price: "330", amount: "1", size: ""),
-            Item(photo: UIImage(named: "men8")!, model: "2113090100", price: "125", amount: "1", size: "")
+        CategorySlider.append(CategoryItems(categrrName: "Women Shoses", photos: [UIImage(named: "women1")!,UIImage(named: "women8")!,UIImage(named: "women2")!,UIImage(named: "women3")!,UIImage(named: "women4")!,UIImage(named: "women5")!,UIImage(named: "women6")!,UIImage(named: "women7")!]))
         
-        ]))
-        
-        
-        VinittoProducts.append(Product(category: "WOMEN SHOSES", product: [
-            Item(photo: UIImage(named: "women1")!, model: "1132830119", price: "220", amount: "1", size: ""),
-            Item(photo: UIImage(named: "women2")!, model: "1132830112", price: "220", amount: "1", size: ""),
-            Item(photo: UIImage(named: "women3")!, model: "1332830205", price: "220", amount: "1", size: ""),
-            Item(photo: UIImage(named: "women4")!, model: "1531580405", price: "125", amount: "1", size: ""),
-            Item(photo: UIImage(named: "women5")!, model: "1061650100", price: "125", amount: "1", size: ""),
-            Item(photo: UIImage(named: "women6")!, model: "1061350105", price: "180", amount: "1", size: ""),
-            Item(photo: UIImage(named: "women7")!, model: " 1261350218", price: "180", amount: "1", size: ""),
-            Item(photo: UIImage(named: "women8")!, model: "1351920205", price: "125", amount: "1", size: "")
-        
-        ]))
-        
-        
-        VinittoProducts.append(Product(category: "WOMEN SHOSES", product: [
-            Item(photo: UIImage(named: "kid1")!, model: "3501971801", price: "100", amount: "1", size: ""),
-            Item(photo: UIImage(named: "kid2")!, model: "3501900306", price: "100", amount: "1", size: ""),
-            Item(photo: UIImage(named: "kid3")!, model: "3501730314", price: "100", amount: "1", size: ""),
-            Item(photo: UIImage(named: "kid4")!, model: "3501571809", price: "100", amount: "1", size: ""),
-            Item(photo: UIImage(named: "kid5")!, model: "3501920306", price: "100", amount: "1", size: ""),
-            Item(photo: UIImage(named: "kid6")!, model: "3302840208", price: "180", amount: "1", size: ""),
-            Item(photo: UIImage(named: "kid7")!, model: "3301810209", price: "100", amount: "1", size: ""),
-            Item(photo: UIImage(named: "kid8")!, model: "3301570206", price: "100", amount: "1", size: "")
-        
-        ]))
-
-        
+        CategorySlider.append(CategoryItems(categrrName: "Kid Shoses", photos: [UIImage(named: "kid1")!,UIImage(named: "kid8")!,UIImage(named: "kid2")!,UIImage(named: "kid3")!,UIImage(named: "kid4")!,UIImage(named: "kid5")!,UIImage(named: "kid6")!,UIImage(named: "kid7")!]))
         
         
     }
@@ -131,15 +97,31 @@ extension HomeViewController : UITableViewDataSource,UITableViewDelegate{
     
    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return VinittoProducts.count
+        return CategorySlider.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: K.CategoryTableCell,for: indexPath) as! CategoryTableViewCell
+        cell.categoryLbl.text = CategorySlider[indexPath.row].categrrName
+        cell.arrPhots = CategorySlider[indexPath.row].photos
+        cell.selectionStyle = .none
                 
         return cell
         
+        
+    }
+    
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+       
+        
+        let ProcuctVC = self.storyboard?.instantiateViewController(withIdentifier: "ProductVC") as! ProductViewController
+        
+        index = indexPath.row
+        ProcuctVC.categoryIndex = index
+        
+        navigationController?.pushViewController(ProcuctVC, animated: true)
         
     }
     
@@ -147,15 +129,6 @@ extension HomeViewController : UITableViewDataSource,UITableViewDelegate{
         return self.view.frame.size.height * 0.22
     }
     
-    
-    
-    
-    
-    
-    
-    
-    
-
     
 }
 
