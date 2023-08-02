@@ -12,6 +12,7 @@ class ProductViewController: UIViewController {
     
     var VinittoProducts = [Product]()
     var categoryIndex = 0
+    var addToCart = [Item]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -73,6 +74,12 @@ extension ProductViewController: UITableViewDataSource , UITableViewDelegate{
         let cell = tableView.dequeueReusableCell(withIdentifier: K.productCell,for: indexPath) as! ProductTableViewCell
         cell.setUp(img: VinittoProducts[categoryIndex].product[indexPath.row].photo, model: VinittoProducts[categoryIndex].product[indexPath.row].model, price: VinittoProducts[categoryIndex].product[indexPath.row].price + " EGP")
         cell.selectionStyle = .none
+        
+        cell.delegat = self
+        
+        
+        
+        
         return cell
     }
     
@@ -112,8 +119,28 @@ extension ProductViewController: UITableViewDataSource , UITableViewDelegate{
     }
     
     
-    
-  
+
+}
+
+extension ProductViewController : MyTableViewCellDelegate{
+    func addToCart(img: UIImage, model: String, price: String, amont: String, size: String) {
+        
+        cartItems.append(Item(photo: img, model: model, price: price, amount: amont, size: size))
+        
+        
+        numOfCartItems += 1
+      
+        if let tabItems = self.tabBarController?.tabBar.items {
+            let tabItem = tabItems[2]
+            tabItem.badgeValue = String(numOfCartItems)
+        }
+        
+        
+        
+       
+        
+        
+    }
     
     
 }

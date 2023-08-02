@@ -39,6 +39,7 @@ extension FavouriteViewController : UITableViewDataSource,UITableViewDelegate{
         
         cell.setUp(img: favItems[indexPath.row].photo, model: favItems[indexPath.row].model, price: favItems[indexPath.row].price + " EGP")
         cell.selectionStyle = .none
+        cell.delegate = self
         return cell
     }
     
@@ -73,4 +74,19 @@ extension FavouriteViewController : UITableViewDataSource,UITableViewDelegate{
 
 }
 
+extension FavouriteViewController : MyFavViewCellDelegate{
+    func addToCart(img: UIImage, model: String, price: String, amont: String, size: String) {
+        
+        cartItems.append(Item(photo: img, model: model, price: price, amount: amont, size: size))
+        
+        numOfCartItems += 1
+      
+        if let tabItems = self.tabBarController?.tabBar.items {
+            let tabItem = tabItems[2]
+            tabItem.badgeValue = String(numOfCartItems)
+        }
+    }
+    
+    
+}
 

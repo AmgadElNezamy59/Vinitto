@@ -5,9 +5,15 @@
 //  Created by Amgad Salah on 14/07/2023.
 //
 
+protocol MyFavViewCellDelegate : AnyObject {
+    func addToCart(img:UIImage,model:String,price:String,amont:String,size:String)
+}
+
 import UIKit
 
 class FavouriteTableViewCell: UITableViewCell {
+    
+    weak var delegate : MyFavViewCellDelegate?
     @IBOutlet weak var amountTxtField: UITextField!
     @IBOutlet weak var Price: UILabel!
     @IBOutlet weak var sizeSegment: UISegmentedControl!
@@ -32,5 +38,10 @@ class FavouriteTableViewCell: UITableViewCell {
         
     }
     @IBAction func addToCartBtn(_ sender: UIButton) {
+        
+        
+        delegate?.addToCart(img: ProductImg.image!, model: Model.text!, price: Price.text!, amont: amountTxtField.text!, size: "1")
+        
+        
     }
 }

@@ -81,6 +81,14 @@
                                                 <constraint firstAttribute="trailingMargin" secondItem="tj4-9B-oLL" secondAttribute="trailing" constant="15" id="ttK-t2-ONG"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="amountLbl" destination="uRK-Gm-fOI" id="ezt-vB-7lD"/>
+                                            <outlet property="img" destination="Gro-az-efS" id="xfp-d5-REB"/>
+                                            <outlet property="modelLbl" destination="ckf-Cw-2sr" id="dyd-vm-ohv"/>
+                                            <outlet property="priceLbl" destination="hHf-E6-eXv" id="9kS-Y5-qWo"/>
+                                            <outlet property="sizeLbl" destination="BAM-yh-GIy" id="1jf-Dz-iJe"/>
+                                            <outlet property="totalPriceLbl" destination="LSg-uz-TrE" id="JyU-Cb-ioW"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

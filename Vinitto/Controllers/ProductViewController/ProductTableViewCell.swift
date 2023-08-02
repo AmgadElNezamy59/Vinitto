@@ -4,10 +4,14 @@
 //
 //  Created by Amgad Salah on 14/07/2023.
 //
-
+protocol MyTableViewCellDelegate : AnyObject {
+    func addToCart(img:UIImage,model:String,price:String,amont:String,size:String)
+}
 import UIKit
 
 class ProductTableViewCell: UITableViewCell {
+    
+    weak var delegat: MyTableViewCellDelegate?
     
     @IBOutlet weak var productImage: UIImageView!
     
@@ -31,10 +35,10 @@ class ProductTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        
     }
     
     
@@ -44,6 +48,15 @@ class ProductTableViewCell: UITableViewCell {
     
     
     @IBAction func addToCartBtnPressed(_ sender: UIButton) {
+        
+        
+        
+        
+        delegat?.addToCart(img: productImage.image!, model: modelLbl.text!, price: priceLbl.text!, amont: amountTxtField.text!, size: "1")
+        
+    
+        
+        
     }
     
     
