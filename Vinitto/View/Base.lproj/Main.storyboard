@@ -33,7 +33,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p1T-5O-FyG">
                                         <rect key="frame" x="30" y="15" width="333" height="269"/>
                                         <mutableString key="text"> في دبي سنة 2014 ثم انتقلت الي مصر عام 2017 بأحدث تكنولوجيا تصنيع الاحذية من نوعيه التريكو التي تكون مكوناتها الرئيسيه غزل مصنع وبولستر وليكرا لراحه القدمين. وقد حرصنا دائما في منتجاتنا ان تكون من افضل الخامات والتصنيع يكون باحدث الانظمة وطبقاً للمعايير العالمية والتي تضمن لك منتجا ذ</mutableString>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -45,8 +45,14 @@
                                         <buttonConfiguration key="configuration" style="plain" title="بدء الاستخدام">
                                             <fontDescription key="titleFontDescription" type="boldSystem" pointSize="18"/>
                                         </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="startBtnPressed:" destination="6pA-Fo-qQ0" eventType="touchUpInside" id="5ga-F4-24D"/>
+                                            <segue destination="9uT-WK-qWB" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="ADz-gG-eST"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -95,6 +101,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZrB-yu-ayI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-45.038167938931295" y="591.54929577464793"/>
+        </scene>
+        <!--HomeTabBar-->
+        <scene sceneID="YTt-2t-SLs">
+            <objects>
+                <viewControllerPlaceholder storyboardName="HomeTabBar" id="9uT-WK-qWB" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e4w-Fp-52Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="857" y="685"/>
         </scene>
     </scenes>
     <resources>

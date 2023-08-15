@@ -79,7 +79,7 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jdy-Nl-PLZ"/>
-                        <color key="backgroundColor" systemColor="systemGray3Color"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
                         <constraints>
                             <constraint firstItem="Kqv-PI-xJN" firstAttribute="width" secondItem="bty-np-aK9" secondAttribute="width" multiplier="0.75827" id="Dq3-FJ-O7j"/>
                             <constraint firstItem="Kqv-PI-xJN" firstAttribute="centerY" secondItem="bty-np-aK9" secondAttribute="centerY" id="hGw-77-neX"/>
@@ -307,8 +307,8 @@
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemGray3Color">
-            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

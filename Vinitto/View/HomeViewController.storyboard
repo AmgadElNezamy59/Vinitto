@@ -144,11 +144,11 @@
             </objects>
             <point key="canvasLocation" x="-669.46564885496184" y="745.77464788732402"/>
         </scene>
-        <!--Home-->
+        <!--Navigation Controller-->
         <scene sceneID="e6Q-4o-Cg2">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Nav-CV-aGw" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="PaX-qn-P6m"/>
+                    <tabBarItem key="tabBarItem" title="" image="house.fill" catalog="system" id="PaX-qn-P6m"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="hcC-7B-uTA">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
@@ -162,7 +162,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w62-8q-naP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1596.1832061068701" y="745.77464788732402"/>
+            <point key="canvasLocation" x="-1526" y="746"/>
         </scene>
         <!--Product View Controller-->
         <scene sceneID="LBP-6r-af0">

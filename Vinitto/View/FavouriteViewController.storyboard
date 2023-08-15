@@ -16,8 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty-cart" translatesAutoresizingMaskIntoConstraints="NO" id="OZ4-Qk-ePe">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart.slash" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="OZ4-Qk-ePe">
+                                <rect key="frame" x="40" y="99.666666666666686" width="297" height="677.33333333333326"/>
                                 <color key="tintColor" systemColor="systemRedColor"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="En6-al-Dpv">
@@ -99,14 +99,14 @@
                         <viewLayoutGuide key="safeArea" id="rYJ-If-AIS"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="rYJ-If-AIS" firstAttribute="bottom" secondItem="OZ4-Qk-ePe" secondAttribute="bottom" constant="40" id="5cK-rl-Hgo"/>
                             <constraint firstItem="En6-al-Dpv" firstAttribute="top" secondItem="rYJ-If-AIS" secondAttribute="top" id="C7P-6f-Jis"/>
                             <constraint firstItem="En6-al-Dpv" firstAttribute="leading" secondItem="rYJ-If-AIS" secondAttribute="leading" id="EGx-sZ-8lC"/>
-                            <constraint firstItem="OZ4-Qk-ePe" firstAttribute="top" secondItem="jlZ-Li-dPK" secondAttribute="top" id="J7e-ux-lCA"/>
-                            <constraint firstItem="OZ4-Qk-ePe" firstAttribute="trailing" secondItem="rYJ-If-AIS" secondAttribute="trailing" id="L4R-MD-q5n"/>
+                            <constraint firstItem="OZ4-Qk-ePe" firstAttribute="top" secondItem="jlZ-Li-dPK" secondAttribute="topMargin" constant="40" id="H7h-Nb-UOZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="OZ4-Qk-ePe" secondAttribute="trailing" constant="40" id="Kg9-iE-uxX"/>
                             <constraint firstItem="En6-al-Dpv" firstAttribute="trailing" secondItem="rYJ-If-AIS" secondAttribute="trailing" id="LIv-VM-IKx"/>
-                            <constraint firstAttribute="bottom" secondItem="OZ4-Qk-ePe" secondAttribute="bottom" id="RV3-Pn-kGo"/>
                             <constraint firstItem="En6-al-Dpv" firstAttribute="bottom" secondItem="rYJ-If-AIS" secondAttribute="bottom" id="gCK-ec-gLw"/>
-                            <constraint firstItem="OZ4-Qk-ePe" firstAttribute="leading" secondItem="rYJ-If-AIS" secondAttribute="leading" id="zhA-iM-GbB"/>
+                            <constraint firstItem="OZ4-Qk-ePe" firstAttribute="leading" secondItem="rYJ-If-AIS" secondAttribute="leading" constant="40" id="s61-hB-qxC"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="heart.fill" catalog="system" badgeValue="0" id="p1n-YD-Ogf"/>
@@ -120,8 +120,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="empty-cart" width="534" height="428"/>
         <image name="heart.fill" catalog="system" width="128" height="107"/>
+        <image name="heart.slash" catalog="system" width="128" height="115"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
